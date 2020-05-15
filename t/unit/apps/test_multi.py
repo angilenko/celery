@@ -273,10 +273,6 @@ class test_Node:
             -9, on_signalled=on_signalled) == 9
         on_signalled.assert_called_with(self.node, 9)
 
-    def test_logfile(self):
-        assert self.node.logfile == self.expander.return_value
-        self.expander.assert_called_with('%n%I.log')
-
 
 class test_Cluster:
 
